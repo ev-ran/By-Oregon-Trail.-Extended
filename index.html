@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon Trail</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id='main_container'>
+        <div id='travelers'>
+            <table id="table_travelers">
+
+                <tr>
+                    <th scope="column">&nbsp</th>
+                    <th scope="column">Name</th>
+                    <th scope="column">Profession</th>
+                    <th scope="column">Food</th>
+                    <th scope="column">is Healsy</th>
+                    <th scope="column">in Wagon</th>
+                    
+                </tr>
+            </table>
+        </div>
+
+        <div id=main_buttons>
+
+            <div id='buttons_for_travelers'>
+                <button id='huntB' class='travelerB butt'> Hunt!</button>
+                <button id='eatB' class='travelerB butt'> Eat!</button>
+                <button id='toWagonB' class='travelerB butt'> To Wagon --></button>
+            </div>
+
+        </div>
+
+        <div id="add_traveler">
+
+            <div>
+                <label for="traveler" class='input_info'>Traveler name: </label>
+                <input type="text" id="tr_name" class="input_f" name="traveler">
+                <button id="add_trav" class='butt'>Add Traveler</button>
+            </div>
+
+            <div>
+
+                <label for="hunter" class='input_info'>Hunter name: </label>
+                <input type="text" id="h_name" class="input_f" name="hunter">
+                <button id="add_hunt" class='butt'>Add Hunter</button>
+            </div>
+
+            <div>
+                <label for="doctor" class='input_info'>Doctor name: </label>
+                <input type="text" id="doc_name" class="input_f" name="doctor">
+                <button id="add_doc" class='butt'>Add Doctor</button>
+            </div>
+
+
+            <div>
+
+                <label for="wagon_capacity" class='input_info' style="color:blue;">Wagon capacity: </label>
+                <input type="number" id="w_capacity" class="input_f" name="wagon_capacity">
+                <button id="wag_capacity" class='butt' style="color:blue;">Build Wagon</button>
+            </div>
+            <div>
+                <button id="resetB" class='butt res'>Reset</button>
+            </div>
+
+        </div>
+        <div id='pic'></div>
+
+        <div id='hospital'>
+
+            <div class="hosp_div">
+                <input type="text" id="ich_doc" class="input_hospital" disabled=true>
+                <button class="b_hospital" id="ch_doc">Choose Doctor</button>
+                <input type="text" id="add_ill" class="input_hospital" disabled=true>
+                <button class="b_hospital" id="ch_sick">Choose Sick</button>
+                <button class="b_hospital" id="b_heal" style="color:red; font-size: 1.2em; width: 60px;">Heal!</button>
+            </div>
+
+            <div class="hosp_div">
+                <input type="text" id="ich_hunter" class="input_hospital" disabled=true>
+                <button class="b_hospital" id="ch_hunter">Choose Hunter</button>
+                <input type="text" id="add_hungry" class="input_hospital" disabled=true>
+                <button class="b_hospital" id="ch_hungry">Choose Hungry</button>
+                <input type="number" id="food" style="width: 35px;"> ->
+                <button class="b_hospital" id="b_feed" style="color:red; font-size: 1.2em; width: 60px;">Feed!</button>
+            </div>
+
+
+        </div>
+
+
+        <div id='wagon_holder'>
+            <h1>Welcome to the Wagon!</h1>
+
+            <div id='wagon_div'> </div>
+
+        </div>
+
+    </div>
+
+    <script src="./Dog.js"></script>
+    <script src="./classes/Traveler.js"></script>
+    <script src="./classes/Wagon.js"></script>
+    <script src="./classes/Hunter.js"></script>
+    <script src="./classes/Doctor.js"></script>
+    <script src="./tests.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
