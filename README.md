@@ -1,9 +1,8 @@
-link:  ___
-
+link: https://ev-ran.github.io/By-Oregon-Trail.-Extended/.
 ## By the path of Oregon Trail. Extended. [Use classes assessment]
-Classes
-Child Classes (Inheritance)
-Dynamic Tables
+*Classes
+*Child Classes (Inheritance)
+*Dynamic Tables
  
 ![-](./images/interface_extension.png)
 
